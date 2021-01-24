@@ -9,12 +9,12 @@ $(() => {
   //$('div#footer').before($('.footnote'));
 
   // Put footnotes inside a numeric ol and put every footnote inside a li
-  //$('.footnote').wrapAll('<ol></ol>').wrap('<li></li>');
+  //$('.footnote').wrapAll("<ol id='notes'></ol>").wrap('<li></li>');
 
   // Move footnote before div#footer, put footnotes inside a numeric ol and put every footnote inside a li, all in one sentence
   $('.footnote')
     .insertBefore('div#footer') // Move footnotes before div#footer
-    .wrapAll('<ol></ol>') // Put footnotes inside a numeric ol
+    .wrapAll("<ol id='notes'></ol>") // Put footnotes inside a numeric ol
     .wrap('<li></li>'); // Put every footnote inside a li element
 
   // Create element to travel to and create links after every p to travel to start, with insertAfter and prependTo
